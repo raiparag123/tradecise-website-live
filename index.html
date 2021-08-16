@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TRADECISE</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mystyle.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!doctype html>
+
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!-- <link rel="stylesheet" href="css/SMC.css" /> -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+  <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Montserrat:400,700|Lato:400,100,300,700,900|Raleway:400,100,200,300,500,700,900|Noto+Serif:400,400italic|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css' />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- <script src="js/jquery-2.2.3.min.js"></script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <!--Preloader-->
+  <div class="loading">
+    <div class="svg-wrapper">
+      <svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
+        <rect class="animate" height="150" width="150" />
+      </svg>
+      <div class="text">
+        <span class="logo"><img src="logo.png"></span>
+        <span class="motto">Learn Stock Market</span>
+      </div>
+    </div>
+  </div>
+
+  <!--SVG animation-->
+  <script>
+    var p = document.querySelector('.animate'),
+      offset = 600;
+    var offsetMe = function() {
+      if (offset < 0) {
+        offset = 600;
+      }
+      p.style.strokeDashoffset = offset;
+      offset = offset - 5;
+      requestAnimationFrame(offsetMe);
+    }
+    offsetMe();
+  </script>
+
+  <!--Desktop Navigation-->
+  <span class="desktop">
+    <header class="resize">
+      <span id="logo-img-d"><img src="logo.png"></span>
+      <span id="logo-text-d">TRADECISE</span>
+  <nav>
+    <!-- <a id="d_one" href="home.html">Home</a>
+    <a id="d_three" href="about.html">About Us</a>
+    <a id="d_four" href="SMC.html">CONTACT US</a> -->
+  </nav>
+  </header>
+  </span>
+
+  <!--Mobile Navigation-->
+  <span class="mobile">
+    <header>
+      <span id="logo-img-d"><img src="logo.png"></span>
+      <span id="logo-text-d">TRADECISE</span>
+  
+    <!-- <div class="button_container">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+  </div> -->
+  </header>
+  <div class="overlay">
+    <nav>
+      <ul>
+        <li><a id="m_one" href="home.html">Home</a></li>
+        <li><a id="m_two" href="#">Calendar</a></li>
+        <li><a id="m_three" href="about.html">About</a></li>
+        <li><a id="m_four" href="SMC.html">SMC</a></li>
+      </ul>
+    </nav>
+  </div>
+  </span>
+
+  <!--Homepage-->
+  <div class="wrapper">
+    <div class="landing">
+      <h1>Learn Stock Market concepts in simple Hindi</h1>
+      <h2>we teach responsibilty</h2>
+    </div>
+  </div>
+
+  <!--Mouse scroller-->
+  <span class="mouseScroll"></span>
+
+  <!--About SMC-->
+  <div class="about">
+    <div class="hideme">
+      <h2>About Us</h2>
+    </div>
+    <div class="hideme">
+      <div id="mission">
+        <p>Everyone wants to earn from stock market, but lack knowledge or fear of loosing money.
+          <br>Here  at Tradecise, you  will learn basics to advanced stock market concepts in simple hindi with risk-management strategies.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Photo Gallery-->
+  <div class="pictures">
+    <h2>VIDEOS</h2>
+    <div class="youtube-video">
+      <iframe class="ytv" width="420" height="345" src="https://www.youtube.com/embed/RhV3mUJWMOs">
+      </iframe>
+      <iframe class="ytv" width="420" height="345" src="https://www.youtube.com/embed/Hn20TnJYl6M">
+      </iframe>
+      <iframe class="ytv" width="420" height="345" src="https://www.youtube.com/embed/tsnkoH0aZCw">
+      </iframe>
+      <iframe class="ytv" width="420" height="345" src="https://www.youtube.com/embed/2oBKvs8TNmM">
+      </iframe>
+  </div>
+    <!-- <div class="hideme">
+      <h2>ABOUT US</h2>
+      -->
+     
+    </div>
+  </div>
+
+  <!--Social section-->
+  <div class="social">
+    <h2>Follow Us</h2>
+    <br>
+    <br>
+    <br>
+    
+    <span class="hideme1">
+      <a target="_blank" href="https://www.youtube.com/c/Tradecise" class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i></a>
+    </span>
+
+    <span class="hideme">
+      <a target="_blank"  href="https://www.facebook.com/tradecise" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+    </span>
+
+    <span class="hideme">
+      <a href="https://www.instagram.com/tradecise" target="_blank" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a>
+    </span>
+
+    
+  </div>
+
+  
+  <!-- <script src="js/SMC.js"></script> -->
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B17G52K1JQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B17G52K1JQ');
+</script>
+</body>
+</html>

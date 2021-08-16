@@ -1,0 +1,387 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+html,
+body {
+  background: rgba(11, 12, 19, 1);
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+body.loaded {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.loading {
+  background: rgba(16, 17, 24, 1);
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  z-index: 1001;
+}
+
+.svg-wrapper {
+  height: 150px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+}
+
+.animate {
+  fill: transparent;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 600;
+  stroke-width: 1px;
+  stroke: #fdad59;
+}
+
+.text {
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  top: -130px;
+}
+
+.logo {
+  display: block;
+  letter-spacing: 10px;
+  font-size: 22px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  font-family: 'Cinzel';
+}
+
+
+
+.motto {
+  display: block;
+  padding-top: 10px;
+  font-family: 'Cinzel';
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+
+/*----------------------------------------------*/
+
+
+/*Desktop Specific CSS*/
+
+@media screen and (min-width: 610px) {
+  .mobile {
+    display: none;
+  }
+  .content-2 {
+    display: none;
+  }
+  header {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    -webkit-transition: all .5s;
+    transition: all .5s ease;
+    z-index: 999;
+  }
+  header #logo {
+    float: left;
+    margin-left: 5%;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 30px;
+    color: #fdad59;
+  }
+  header nav {
+    float: right;
+    margin-right: 5%;
+  }
+  header nav a {
+    position: relative;
+    color: #a3a3a3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 50px;
+    transition: color .25s ease;
+  }
+  #d_four {
+    color: #fdad59;
+  }
+  nav a:hover {
+    color: white;
+  }
+  header.resize {
+    height: 90px;
+    line-height: 77px;
+    background: rgb(31, 32, 39);
+    border-bottom: 1px solid rgb(46, 48, 56);
+  }
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .landing {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.25);
+    background-image: linear-gradient(rgba(21, 22, 29, .75), rgba(21, 22, 29, .75)), url(hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: all 1.5s ease;
+  }
+  .landing.loaded {
+    transform: scale(1.0);
+  }
+  .landing h1 {
+    color: white;
+    font-size:3vw;
+    position: absolute;
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: 5%;
+	width: 60%;
+    transition: all .75s ease;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    letter-spacing: 5px;
+    top: 35%;
+  }
+  .landing h2 {
+	color: #fdad59;
+	font-family: 'Noto Serif', serif, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+	position: absolute;
+	top: 52%;
+	margin-left: -50%;
+	transition: margin-left 1s ease;
+  }
+  .landing h2.loaded {
+	 margin-left: 5%;
+  }
+  .mouseScroll {
+    display: block;
+    width: 26px;
+    height: 42px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    margin: 0 auto;
+    transition: opacity 0.5s;
+  }
+  .mouseScroll::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+    position: relative;
+    border-radius: 4px;
+    background: #fff;
+    -webkit-animation: scrollWheel 2s infinite;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    box-sizing: border-box;
+  }
+  .mouseScroll:hover {
+    cursor: pointer;
+    opacity: .5;
+  }
+  @keyframes scrollWheel {
+    from {
+      top: 0px;
+    }
+    to {
+      top: 6px;
+    }
+  }
+  .about {
+    width: 100%;
+    padding-bottom: 100px;
+    text-align: center;
+    color: white;
+  }
+  .about h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 80px;
+  }
+
+  #mission {
+    margin-top: 20px;
+    font-family: 'Noto Serif', serif, sans-serif; 
+    font-size: 20px;
+    color: #999;
+    width: 70%;
+    margin-left: 15%;
+    /* padding-bottom: 30px; */
+    text-align: center;
+    line-height: 30px;
+  }
+  .pictures {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /* background: linear-gradient(rgba(21, 22, 29, .9), rgba(21, 22, 29, .9)), url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-and-white-wallpaper-13.jpg); */
+    background: linear-gradient(rgba(21, 22, 29, .9), rgba(21, 22, 29, .9));
+    
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .pictures h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+
+
+  .social {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .social h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+  
+  }
+
+  
+  .hideme {
+    opacity: 0;
+    padding-left: 50px;
+  }
+  .hideme2 {
+    opacity: 0;
+    padding-left: 50px;
+  }
+  .icoFacebook {
+    display: inline-block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    line-height: 77px;
+    color: rgb(40, 40, 40);
+    background-color: #fdad59;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .5s ease;
+  }
+  .icoYoutube {
+    display: inline-block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    line-height: 77px;
+    color: rgb(40, 40, 40);
+    background-color: #fdad59;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: 38%;
+    margin-right: auto;
+    transition: all .5s ease;
+    
+  }
+  .icoInstagram{
+    display: inline-block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    line-height: 77px;
+    color: rgb(40, 40, 40);
+    background-color: #fdad59;
+    position: relative;
+    left: 0;
+    right: 0;
+    /* margin-left: 50%; */
+    margin-right: auto;
+    transition: all .5s ease;
+    
+  }
+
+  .icoFacebook:hover {
+    background: rgb(31, 32, 39);
+    color: #fdad59;
+  }
+
+  .icoInstagram:hover {
+    background: rgb(31, 32, 39);
+    color: #fdad59;
+  }
+
+  .icoYoutube:hover {
+    background: rgb(31, 32, 39);
+    color: #fdad59;
+  }
+
+
+}
